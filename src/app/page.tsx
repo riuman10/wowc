@@ -9,7 +9,7 @@ export default function Home() {
   const [open , setOpen] = useState(false);
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <Button onClick={() => setOpen(!open)} full = {false} title = "Open" />
+      <Button onClick={() => setOpen(!open)} full = {false} title = {open ? "Close" : "Open"} />
       {
         open ? (
           <Panel />

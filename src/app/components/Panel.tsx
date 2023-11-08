@@ -43,7 +43,7 @@ function Panel() {
           backgroundImage:
             "radial-gradient(at 65% 31%, hsla(139,0%,23%,1) 0px, transparent 50%),radial-gradient(at 23% 5%, hsla(0,0%,23%,1) 0px, transparent 50%), radial-gradient(at 85% 10%, hsla(40,0%,16%,1) 0px, transparent 50%), radial-gradient(at 44% 99%, hsla(160,0%,25%,1) 0px, transparent 50%)",
         }}
-        className="h-[33px] rounded-b-xl flex gap-1 w-full"
+        className="h-[33px] rounded-b-xl flex gap-1 w-full mb-[2px]"
       >
         <Button title="Trade" />
         <Button title="Cancel" />
