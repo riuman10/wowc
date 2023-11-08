@@ -1,7 +1,7 @@
 export default function MedalTab() {
     return (
       <div
-        className="ring-1 ring-gray-400 hover:ring-yellow-200 h-full w-full transition-all duration-150 ease-out rounded-md px-4 flex items-center justify-center gap-2 cursor-pointer"
+        className="ring-1 ring-gray-400 hover:ring-yellow-200 h-full w-full transition-all duration-150 ease-out rounded-sm px-4 flex items-center justify-center gap-2 cursor-pointer"
         style={{
           backgroundImage: `url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`,
           backgroundColor: "#18181B",

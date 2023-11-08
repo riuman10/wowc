@@ -6,47 +6,72 @@ import Button from "./Button";
 import MedalPenal from "./MedalPenal";
 import Tab from "./Tab";
 
-function Panel() {
+function Panel({ closeButton = false, showButtons = false , left = false}) {
   return (
-    <div className="w-[300px] min-h-[500px] bg-gradient-to-b from-[#262626] to-[#121212] rounded-lg relative">
-      <div className="absolute -top-5 -left-5">
-        <Avatar />
+    <div className="border w-[300px] min-h-[500px] bg-gradient-to-b from-[#262626] to-[#121212] rounded-lg relative">
+      <div className="absolute -top-5 -left-4">
+        <div className="relative">
+          {/* <div className="absolute top-0 right-0 bg-black h-2 w-2"></div> */}
+          <Avatar />
+        </div>
       </div>
-      <div className="ml-[100px] flex">
+      <div
+        className="ml-[100px] flex"
+        style={{
+          backgroundColor: "#292828",
+          backgroundImage: `url("https://www.transparenttextures.com/patterns/nice-snow.png`,
+          borderBottom: "3px groove #27272A",
+          borderLeft: "3px groove #27272A",
+          borderTop: "3px ridge #27272A",
+          borderRight: "3px ridge #27272A",
+        }}
+      >
         <NameBox />
-        <Close />
+        {closeButton ? <Close /> : " "}
       </div>
       <div
         style={{
-          backgroundColor: `#0f0404`,
-          backgroundImage:`url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`
-          // backgroundColor: "hsla(164,0%,36%,1)",
-          // backgroundImage:
-          //   "radial-gradient(at 65% 31%, hsla(139,0%,23%,1) 0px, transparent 50%),radial-gradient(at 23% 5%, hsla(0,0%,23%,1) 0px, transparent 50%), radial-gradient(at 85% 10%, hsla(40,0%,16%,1) 0px, transparent 50%), radial-gradient(at 44% 99%, hsla(160,0%,25%,1) 0px, transparent 50%)",
+          backgroundColor: left ? "#000000" : "#44403C",
+          backgroundImage: `url("https://www.transparenttextures.com/patterns/nice-snow.png`,
+          height: "66px",
         }}
-        className="h-[66px] bg-gradient-to-t from-[#262626] to-[#121212]"
       />
       <div>
         <MedalPenal />
       </div>
-      <div className="h-full bg-gray-900 p-2">
-        <div className="flex flex-col gap-2 bg-black">
-          <Tab />
-          <Tab />
-          <Tab />
-          <Tab />
+      <div
+        className="h-full p-2"
+        style={{
+          backgroundColor: left  ? "#000000" : `#292828`,
+          backgroundImage: `url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`,
+        }}
+      >
+        <div className="flex flex-col  bg-red-100">
+          <Tab left = {left}/>
+          <Tab left = {left}/> <Tab left = {left}/> <Tab left = {left}/>
         </div>
       </div>
       <div
         style={{
-          backgroundColor: "hsla(164,0%,36%,1)",
+          backgroundColor: "black",
           backgroundImage:
-            "radial-gradient(at 65% 31%, hsla(139,0%,23%,1) 0px, transparent 50%),radial-gradient(at 23% 5%, hsla(0,0%,23%,1) 0px, transparent 50%), radial-gradient(at 85% 10%, hsla(40,0%,16%,1) 0px, transparent 50%), radial-gradient(at 44% 99%, hsla(160,0%,25%,1) 0px, transparent 50%)",
+            'url("https://www.transparenttextures.com/patterns/felt.png"',
+          borderTop: "3px ridge #27272A",
+          borderLeft: "3px groove #27272A",
+          borderRight: "3px ridge #27272A",
+          borderBottom: "3px groove #27272A",
+          boxShadow: "inset 0px 0px 5px 3px rgba(1,1,1,0.3)",
         }}
-        className="h-[33px] rounded-b-xl flex gap-1 w-full mb-[2px]"
+        className="h-[33px] rounded-lg flex w-full border"
       >
-        <Button title="Trade" />
-        <Button title="Cancel" />
+        {showButtons ? (
+          <>
+            <Button title="Trade" />
+            <Button title="Cancel" />
+          </>
+        ) : (
+          ""
+        )}
       </div>
     </div>
   );

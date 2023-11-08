@@ -1,31 +1,43 @@
 import React from "react";
 
-function Tab() {
+function Tab({left = false}) {
   return (
-    <div className="flex items-center gap-3 h-[80px] bg-black">
+    <div className="flex items-center h-[80px]"
+    style={{
+      backgroundColor: left ? "#000000" : `#292828`,
+      backgroundImage: `url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`,
+    }}
+    >
       <div
       style={{
-        borderTop : '2px groove #4f4f4d',
-        borderLeft : '2px groove #4f4f4d',
-        borderRight : '2px ridge #4f4f4d',
-        borderBottom : '2px ridge #4f4f4d',
+        borderTop : '2px groove #EAB308',
+        borderLeft : '2px groove #EAB308',
+        borderRight : '2px ridge #EAB308',
+        borderBottom : '2px ridge #EAB308',
         borderRadius : '13px',
         boxShadow : 'inset 0px 0px 5px 3px black',
         width : '40%',
         height : '100%',
-        padding : '3px'
+        padding : '0px'
       }}
       >
       <div
-        className="ring-2 ring-yellow-300 w-full h-full rounded-lg hover:ring-blue-300 transition-all duration-300 ease-out"
+        className="w-full h-full rounded-lg hover:ring-blue-300 transition-all duration-300 ease-out"
         style={{
-          backgroundImage:`url("https://www.transparenttextures.com/patterns/ice-age.png")`
+          backgroundColor: "#18181B",
+          backgroundImage:`url("https://www.transparenttextures.com/patterns/ice-age.png")`,
+          borderTop : '3px groove #27272A',
+          borderLeft : '3px groove #27272A',
+          borderRight : '3px ridge #27272A',
+          borderBottom : '3px ridge #27272A',
+        boxShadow : 'inset 0px 0px 5px 3px black',
+          borderRadius : '9px',
         }}
       ></div>
       </div>
       <div
         style={{
-          backgroundColor: "#292828",
+          backgroundColor: left ? "#000000" : "#292828",
           backgroundImage:`url("https://www.transparenttextures.com/patterns/nice-snow.png")`,
           borderTop : '2px groove black',
           borderLeft : '2px groove black',

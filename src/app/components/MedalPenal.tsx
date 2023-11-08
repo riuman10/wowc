@@ -2,10 +2,21 @@ import MedalTab from "./MedalTab";
 
 function MedalPenal() {
   return (
-    <div className="bg-black h-[35px] flex gap-[2px] max-w-[300px] py-1 px-1 border border-gray-600 shadow-inner rounded-sm">
-      <MedalTab />
-      <MedalTab />
-      <MedalTab />
+    <div
+      className=" h-[35px] flex gap-[2px] max-w-[300px] border border-gray-500 shadow-inner rounded-sm"
+      style={{
+        boxShadow: "0 6px 2px -2px gray",
+        borderTop : '3px groove #27272A',
+        borderLeft : '3px groove #27272A',
+        borderRight : '3px ridge #27272A',
+        borderBottom : '3px ridge #27272A',
+      }}
+    >
+      <div className="ring-2 ring-gray-800 flex gap-[2px] w-full rounded-xl">
+        <MedalTab />
+        <MedalTab />
+        <MedalTab />
+      </div>
     </div>
   );
 }
