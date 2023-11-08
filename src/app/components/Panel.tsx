@@ -8,7 +8,7 @@ import Tab from "./Tab";
 
 function Panel({ closeButton = false, showButtons = false , left = false}) {
   return (
-    <div className="border w-[300px] min-h-[500px] bg-gradient-to-b from-[#262626] to-[#121212] rounded-lg relative">
+    <div className="border w-[250px] md:w-[300px] min-h-[500px] bg-gradient-to-b from-[#262626] to-[#121212] rounded-lg relative">
       <div className="absolute -top-5 -left-4">
         <div className="relative">
           {/* <div className="absolute top-0 right-0 bg-black h-2 w-2"></div> */}

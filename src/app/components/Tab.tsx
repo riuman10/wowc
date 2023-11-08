@@ -16,10 +16,10 @@ function Tab({left = false}) {
         borderBottom : '2px ridge #EAB308',
         borderRadius : '13px',
         boxShadow : 'inset 0px 0px 5px 3px black',
-        width : '40%',
         height : '100%',
         padding : '0px'
       }}
+      className="md:w-[40%] w-[50%]"
       >
       <div
         className="w-full h-full rounded-lg hover:ring-blue-300 transition-all duration-300 ease-out"
