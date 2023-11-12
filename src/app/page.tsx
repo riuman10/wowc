@@ -3,6 +3,7 @@ import Image from 'next/image'
 import { useState } from 'react';
 import Button from './components/Button';
 import Panel from './components/Panel'
+import NewPanel from './components/NewPanel';
 
 
 export default function Home() {
@@ -18,6 +19,8 @@ export default function Home() {
           </div>
         ) : ""
       }
+
+      <NewPanel />
     </main>
   )
 }

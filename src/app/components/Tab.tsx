@@ -2,39 +2,13 @@ import React from "react";
 
 function Tab({left = false}) {
   return (
-    <div className="flex items-center h-[80px]"
+    <div className="flex h-[50px]"
     style={{
       backgroundColor: left ? "#000000" : `#292828`,
-      backgroundImage: `url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`,
+      // backgroundImage: `url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`,
     }}
     >
-      <div
-      style={{
-        borderTop : '2px groove #EAB308',
-        borderLeft : '2px groove #EAB308',
-        borderRight : '2px ridge #EAB308',
-        borderBottom : '2px ridge #EAB308',
-        borderRadius : '13px',
-        boxShadow : 'inset 0px 0px 5px 3px black',
-        height : '100%',
-        padding : '0px'
-      }}
-      className="md:w-[40%] w-[50%]"
-      >
-      <div
-        className="w-full h-full rounded-lg hover:ring-blue-300 transition-all duration-300 ease-out"
-        style={{
-          backgroundColor: "#18181B",
-          backgroundImage:`url("https://www.transparenttextures.com/patterns/ice-age.png")`,
-          borderTop : '3px groove #27272A',
-          borderLeft : '3px groove #27272A',
-          borderRight : '3px ridge #27272A',
-          borderBottom : '3px ridge #27272A',
-        boxShadow : 'inset 0px 0px 5px 3px black',
-          borderRadius : '9px',
-        }}
-      ></div>
-      </div>
+      <img src = "/emptySlot1.png" className="object-cover h-[30px] w-[200px]" />
       <div
         style={{
           backgroundColor: left ? "#000000" : "#292828",

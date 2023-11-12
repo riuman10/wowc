@@ -1,12 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+@import url('https://fonts.cdnfonts.com/css/friz-quadrata');
 
+
+@font-face {
+  font-family: 'Friz';
+  src: url("../app/fonts/friz-quadrata-std-medium.otf") format("opentype");
+}
 
 
 * {
-  font-family: 'Metamorphous', serif;
+  font-family: 'Friz', sans-serif;
 }
 
 

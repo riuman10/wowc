@@ -6,33 +6,31 @@ import Button from "./Button";
 import MedalPenal from "./MedalPenal";
 import Tab from "./Tab";
 
-function Panel({ closeButton = false, showButtons = false , left = false}) {
+function Panel({ closeButton = false, showButtons = false, left = false }) {
   return (
-    <div className="border w-[250px] md:w-[300px] min-h-[500px] bg-gradient-to-b from-[#262626] to-[#121212] rounded-lg relative">
+    <div
+      className="border w-[250px] md:w-[300px] min-h-[500px] rounded-xl relative"
+      style={{
+        backgroundImage: `url("/PanelUX.png")`,
+        objectFit: "fill",
+        height: "500px",
+        width: "300px",
+      }}
+    >
       <div className="absolute -top-5 -left-4">
         <div className="relative">
           {/* <div className="absolute top-0 right-0 bg-black h-2 w-2"></div> */}
           <Avatar />
         </div>
       </div>
-      <div
-        className="ml-[100px] flex"
-        style={{
-          backgroundColor: "#292828",
-          backgroundImage: `url("https://www.transparenttextures.com/patterns/nice-snow.png`,
-          borderBottom: "3px groove #27272A",
-          borderLeft: "3px groove #27272A",
-          borderTop: "3px ridge #27272A",
-          borderRight: "3px ridge #27272A",
-        }}
-      >
+      <div className="ml-[100px] flex">
         <NameBox />
         {closeButton ? <Close /> : " "}
       </div>
       <div
         style={{
           backgroundColor: left ? "#000000" : "#44403C",
-          backgroundImage: `url("https://www.transparenttextures.com/patterns/nice-snow.png`,
+          // backgroundImage: `url("https://www.transparenttextures.com/patterns/nice-snow.png`,
           height: "66px",
         }}
       />
@@ -42,13 +40,13 @@ function Panel({ closeButton = false, showButtons = false , left = false}) {
       <div
         className="h-full p-2"
         style={{
-          backgroundColor: left  ? "#000000" : `#292828`,
+          backgroundColor: left ? "#000000" : `#292828`,
           backgroundImage: `url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`,
         }}
       >
         <div className="flex flex-col  bg-red-100">
-          <Tab left = {left}/>
-          <Tab left = {left}/> <Tab left = {left}/> <Tab left = {left}/>
+          <Tab left={left} />
+          <Tab left={left} /> <Tab left={left} /> <Tab left={left} />
         </div>
       </div>
       <div
