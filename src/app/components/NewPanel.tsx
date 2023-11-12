@@ -12,14 +12,14 @@ function NewPanel() {
         src={"/PanelTrade.png"}
         className="w-[500px] h-auto relative"
       />
-      <div className="absolute top-6 right-4">
+      <div className="absolute md:top-6 top-4 md:right-4 right-3">
         <Close />
       </div>
-      <section className="absolute md:top-7 top-4 text-sm md:left-[95px] left-10 w-[180px] md:w-[160px] ">
+      <section className="absolute md:top-7 top-5 text-sm md:left-[95px] left-10 w-[180px] md:w-[160px] ">
         <p className="text-center text-white text-xs">Abha</p>
       </section>
 
-      <section className="absolute md:top-7 top-4 text-sm md:right-[45px] right-[30px] md:w-[120px] w-[100px] ">
+      <section className="absolute md:top-7 top-5 text-sm md:right-[45px] right-[30px] md:w-[120px] w-[100px] ">
         <p className="text-center text-white text-xs">Azhadh</p>
       </section>
 
@@ -37,12 +37,12 @@ function NewPanel() {
         />
       </section>
 
-      <section className="absolute md:bottom-5 bottom-4 md:right-4 right-4">
-        <Button width={`${isMobile ? "75px" : "105px"}`} title="Trade" />
+      <section className="absolute md:bottom-5 bottom-4 md:right-4 right-3">
+        <Button width={`${isMobile ? "85px" : "105px"}`} title="Trade" />
       </section>
 
-      <section className="absolute md:bottom-5 bottom-4 md:right-[130px] right-[100px]">
-        <Button width={`${isMobile ? "80px" : "108px"}`} title="Cancel" />
+      <section className="absolute md:bottom-5 bottom-4 md:right-[130px] right-[98px]">
+        <Button width={`${isMobile ? "85px" : "108px"}`} title="Cancel" />
       </section>
     </div>
   );
