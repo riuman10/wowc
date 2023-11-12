@@ -10,7 +10,7 @@ function NewPanel() {
     <div className="relative">
       <img
         src={"/PanelTrade.png"}
-        className="w-[500px] h-auto bg-black relative"
+        className="w-[500px] h-auto relative"
       />
       <section className="absolute top-6 right-4">
         <Close />
@@ -23,17 +23,17 @@ function NewPanel() {
         <p className="text-center text-white text-xs">Azhadh</p>
       </section>
 
-      <section className="absolute top-2 left-2 md:top-3 md:left-4">
+      <section className="absolute top-2 left-2 md:top-3 md:left-3">
         <Avatar
-          width={`${isMobile ? "60px" : "75px"}`}
-          height={`${isMobile ? "60px" : "75px"}`}
+          width={`${isMobile ? "60px" : "80px"}`}
+          height={`${isMobile ? "60px" : "80px"}`}
         />
       </section>
 
-      <section className="absolute top-2 right-[130px] md:top-3 md:right-[170px]">
+      <section className="absolute top-2 right-[130px] md:top-2 md:right-[170px]">
         <Avatar
-          width={`${isMobile ? "60px" : "75px"}`}
-          height={`${isMobile ? "60px" : "75px"}`}
+          width={`${isMobile ? "60px" : "80px"}`}
+          height={`${isMobile ? "60px" : "80px"}`}
         />
       </section>
 
@@ -42,7 +42,7 @@ function NewPanel() {
       </section>
 
       <section className="absolute md:bottom-5 bottom-4 md:right-[130px] right-[100px]">
-        <Button width={`${isMobile ? "80px" : "105px"}`} title="Cancel" />
+        <Button width={`${isMobile ? "80px" : "108px"}`} title="Cancel" />
       </section>
     </div>
   );

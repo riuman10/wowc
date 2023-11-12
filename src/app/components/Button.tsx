@@ -8,7 +8,7 @@ function Button({
 }) {
   const [isHovering , setIsHovering] = useState(false);
   return (
-    <div className={`md:px-[2px] px-[0px] py-[0px] md:py-[2px] cursor-pointer flex items-center justify-center rounded-md border-2  transition-all duration-250 ease-out`}
+    <div className={`md:px-[3px] px-[0px] py-[0px] md:py-[3px] cursor-pointer flex items-center justify-center rounded-md border-2  transition-all duration-250 ease-out`}
     style = {{
      backgroundImage : isHovering ? 'radial-gradient(circle, #e52b2b, #8b0000)' : 'radial-gradient(circle, #8b0000, #8b0000)',
      borderTop : '2px ridge #ffb000',
