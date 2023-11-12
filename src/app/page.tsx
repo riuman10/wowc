@@ -13,7 +13,7 @@ export default function Home() {
       <Button onClick={() => setOpen(!open)} title = {open ? "Close" : "Open"} />
       {
         open ? (
-          <div className='flex items-center'>
+          <div className=''>
             <NewPanel />
           </div>
         ) : ""

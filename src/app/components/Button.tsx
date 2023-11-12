@@ -8,7 +8,7 @@ function Button({
 }) {
   const [isHovering , setIsHovering] = useState(false);
   return (
-    <div className={`md:px-[3px] px-[0px] py-[0px] md:py-[3px] cursor-pointer flex items-center justify-center rounded-md border-2  transition-all duration-250 ease-out`}
+    <div className={`md:px-[3px] px-[0px] py-[0px] md:py-[3px] cursor-pointer flex items-center justify-center rounded-[4px] border-2  transition-all duration-250 ease-out`}
     style = {{
      backgroundImage : isHovering ? 'radial-gradient(circle, #e52b2b, #8b0000)' : 'radial-gradient(circle, #8b0000, #8b0000)',
      borderTop : '2px ridge #ffb000',
@@ -22,7 +22,7 @@ function Button({
     onMouseLeave={() => setIsHovering(false)}
     onClick={() => onClick()}
     >
-      <p className="text-xs text-yellow-400 text-shadow-[0_4px_8px_#6366f1]">{title}</p>
+      <p className="md:text-xs text-[8px] text-yellow-400 text-shadow-[0_4px_8px_#6366f1]">{title}</p>
     </div>
   );
 }

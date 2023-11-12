@@ -9,7 +9,7 @@ function Close() {
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
       src = "/buttonClose.png"
-      className="md:h-6 md:w-6 w-5 h-5"
+      className="md:h-6 md:w-6 w-3 h-3"
     >
     </img>
   );
