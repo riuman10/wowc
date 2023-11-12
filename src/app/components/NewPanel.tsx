@@ -12,9 +12,9 @@ function NewPanel() {
         src={"/PanelTrade.png"}
         className="w-[500px] h-auto relative"
       />
-      <section className="absolute top-6 right-4">
+      <div className="absolute top-6 right-4">
         <Close />
-      </section>
+      </div>
       <section className="absolute md:top-7 top-4 text-sm md:left-[95px] left-10 w-[180px] md:w-[160px] ">
         <p className="text-center text-white text-xs">Abha</p>
       </section>

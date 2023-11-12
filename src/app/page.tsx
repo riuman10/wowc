@@ -14,13 +14,10 @@ export default function Home() {
       {
         open ? (
           <div className='flex items-center'>
-          <Panel left />
-          <Panel  closeButton showButtons />
+            <NewPanel />
           </div>
         ) : ""
       }
-
-      <NewPanel />
     </main>
   )
 }
