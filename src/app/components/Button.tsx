@@ -4,11 +4,12 @@ import { useState } from "react";
 function Button({
   title = "Button",
   onClick = () => {},
-  width = '100px'
+  width = '100px',
+  height = "23px"
 }) {
   const [isHovering , setIsHovering] = useState(false);
   return (
-    <div className={`md:px-[3px] px-[0px] py-[0px] md:py-[3px] cursor-pointer flex items-center justify-center rounded-[4px] border-2  transition-all duration-250 ease-out`}
+    <div className={`md:px-[2px] px-[0px] py-[0px] md:py-[2px] cursor-pointer flex items-center justify-center rounded-[4px] border-2  transition-all duration-250 ease-out`}
     style = {{
      backgroundImage : isHovering ? 'radial-gradient(circle, #e52b2b, #8b0000)' : 'radial-gradient(circle, #8b0000, #8b0000)',
      borderTop : '2px ridge #ffb000',
@@ -16,6 +17,7 @@ function Button({
      borderRight : '2px ridge #ffb000',
      borderBottom : '2px groove #ffb000',
      width : width,
+     height : height,
      boxShadow : 'inset 0px 0px 5px 3px rgba(1,1,1,0.3)'
     }}
     onMouseEnter={() => setIsHovering(true)}
