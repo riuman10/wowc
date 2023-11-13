@@ -46,12 +46,24 @@ function NewPanel() {
         </p>
       </section>
 
+      {/* Right Tabs */}
       <section className="absolute md:right-[28px] right-5 md:top-[150px] top-[110px] md:w-[205px] w-[155px]">
         <div className="flex flex-col gap-2">
           <Tab />
           <Tab />
           <Tab />
           <Tab />
+        </div>
+      </section>
+
+      {/* Left Tabs */}
+
+      <section className="absolute md:left-[32px] left-6 md:top-[150px] top-[110px] md:w-[205px] w-[155px]">
+        <div className="flex flex-col gap-2">
+          <Tab left />
+          <Tab left />
+          <Tab left />
+          <Tab left />
         </div>
       </section>
 
