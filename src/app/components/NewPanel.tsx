@@ -10,44 +10,59 @@ function NewPanel() {
     <div className="relative">
       <img
         src={"/PanelTrade.png"}
-        className="md:min-w-[500px] min-w-[250px] h-auto relative object-cover z-10"
+        className="md:min-w-[500px] min-w-[375px] md:min-h-auto min-h-[60vh] relative object-cover"
       />
-      <div className="absolute md:top-[22px] top-[11px] md:right-[15px] right-2">
+      <div className="absolute md:top-[22px] top-[15px] md:right-[15px] right-2">
         <Close />
       </div>
-      <section className="absolute md:top-7 top-3 text-sm md:left-[95px] left-12 w-[80px] md:w-[160px]">
-        <p className="text-center text-white text-xs md:text-xs text-[8px]">Mohamed</p>
+
+      <section className="absolute md:top-[100px] top-[75px] md:left-7 left-4 md:w-[215px] w-[170px] md:min-h-[30px] bg-gradient-to-b from-black to-gray-900 -z-10">
+        <p>`</p>
       </section>
 
-      <section className="absolute md:top-7 top-3 text-sm md:right-[65px] right-[20px] md:w-[90px] w-[70px] ">
-        <p className="text-center text-white text-xs md:text-xs text-[8px]">Ahmed</p>
+      <section className="absolute md:top-[100px] top-[75px] md:right-6 right-2 bg-gray-100 md:w-[215px] w-[170px]  md:min-h-[25px] bg-[url('/tex.png')] -z-10">
+        <p>X</p>
       </section>
 
-      <section className="absolute top-1 left-[5px] md:top-3 md:left-3">
+      <section className="absolute md:top-7 top-5 text-sm md:left-[95px] left-[70px] w-[120px] md:w-[160px] ">
+        <p className="text-center text-white text-xs md:text-xs text-[8px]">
+          Mohamed
+        </p>
+      </section>
+
+      <section className="absolute md:top-7 top-5 text-sm md:right-[65px] right-[30px] md:w-[90px] w-[95px] ">
+        <p className="text-center text-white text-xs md:text-xs text-[8px]">
+          Ahmed
+        </p>
+      </section>
+
+      <section className="absolute top-1 left-[5px] md:top-3 md:left-3 -z-10">
         <Avatar
-          width={`${isMobile ? "40px" : "80px"}`}
-          height={`${isMobile ? "40px" : "80px"}`}
+          width={`${isMobile ? "70px" : "80px"}`}
+          height={`${isMobile ? "70px" : "80px"}`}
         />
       </section>
 
-      <section className="absolute top-1 right-[85px] md:top-2 md:right-[170px]">
+      <section className="absolute top-1 right-[125px] md:top-2 md:right-[170px] -z-10">
         <Avatar
-          width={`${isMobile ? "40px" : "80px"}`}
-          height={`${isMobile ? "40px" : "80px"}`}
+          width={`${isMobile ? "70px" : "80px"}`}
+          height={`${isMobile ? "70px" : "80px"}`}
         />
       </section>
 
-      <section className="absolute md:bottom-[23px] bottom-4 md:right-[17px] right-2 z-10">
-        <Button 
-        title="Trade" 
-        width={`${isMobile ? "55px" : "102px"}`} 
+      <section className="absolute md:bottom-[23px] bottom-4 md:right-[17px] right-[10px] z-10">
+        <Button
+          title="Trade"
+          width={`${isMobile ? "80px" : "102px"}`}
+          height={`${isMobile ? "20px" : "23px"}`}
         />
       </section>
 
-      <section className="absolute md:bottom-[23px] bottom-4 md:right-[129px] right-[64px] z-10">
-        <Button 
-        title="Cancel" 
-        width={`${isMobile ? "55px" : "108px"}`} 
+      <section className="absolute md:bottom-[23px] bottom-4 md:right-[129px] right-[95px] z-10">
+        <Button
+          title="Cancel"
+          width={`${isMobile ? "85px" : "108px"}`}
+          height={`${isMobile ? "20px" : "23px"}`}
         />
       </section>
     </div>
