@@ -30,7 +30,6 @@ function NewPanel() {
       <section className="absolute md:top-[100px] top-[75px] md:left-7 left-4 md:w-[215px] w-[170px] md:min-h-[30px] bg-gradient-to-b from-black to-gray-900 -z-10">
         <p>`</p>
       </section>
-      1
       <section className="absolute md:top-[100px] top-[75px] md:right-6 right-2 bg-gray-100 md:w-[215px] w-[170px]  md:min-h-[25px] bg-[url('/tex.png')] -z-10">
         <p>`</p>
       </section>
@@ -44,10 +43,10 @@ function NewPanel() {
           Ahmed
         </p>
       </section>
-      <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:left-7 left-5 bg-red-500 h-16 md:h-[80px] p-1 rounded-sm">
+      <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:left-7 left-5 bg-transparent h-16 md:h-[80px] p-1 rounded-sm">
         <p className="text-xs md:text-sm text-gray-300">Will not be traded</p>
       </div>
-      <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:right-7 right-4 bg-red-500 h-16 md:h-[80px] p-1 rounded-sm">
+      <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:right-6 right-4 bg-transparent h-16 md:h-[80px] p-1 rounded-sm">
         <p className="text-xs md:text-sm text-gray-300">Will not be traded</p>
       </div>
       <section className="absolute md:bottom-[23px] bottom-4 md:right-[17px] right-[10px] z-10">
