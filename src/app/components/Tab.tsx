@@ -2,23 +2,20 @@ import React from "react";
 
 function Tab({left = false}) {
   return (
-    <div className="flex h-[50px]"
+    <div className="flex md:h-[50px] h-[40px] gap-[2px]"
     style={{
-      backgroundColor: left ? "#000000" : `#292828`,
+      // backgroundColor: left ? "#000000" : `#292828`,
       // backgroundImage: `url("https://www.transparenttextures.com/patterns/green-dust-and-scratches.png")`,
     }}
     >
-      <img src = "/emptySlot1.png" className="object-cover h-[30px] w-[200px]" />
+      <img src = "/Slot.png" className="bg-transparent h-full" />
       <div
         style={{
           backgroundColor: left ? "#000000" : "#292828",
           backgroundImage:`url("https://www.transparenttextures.com/patterns/nice-snow.png")`,
-          borderTop : '2px groove black',
-          borderLeft : '2px groove black',
-          borderRight : '2px ridge black',
-          borderBottom : '3px ridge #4f4f4d',
+          boxShadow : 'inset 0 0 10px #0f0f0f'
         }}
-        className="h-full w-full border border-gray-700 rounded-xl shadow-inner shadow-gray-900"
+        className="h-full w-full border-gray-700 rounded-lg shadow-inner"
       ></div>
     </div>
   );

@@ -6,6 +6,8 @@ import Tab from "./Tab";
 
 function NewPanel() {
   const isMobile = useIsMobile();
+
+  let arr = [1, 2, 3, 4];
   return (
     <div className="relative">
       <img
@@ -34,20 +36,30 @@ function NewPanel() {
         <p>`</p>
       </section>
       <section className="absolute md:top-7 top-5 text-sm md:left-[95px] left-[70px] w-[120px] md:w-[160px] ">
-        <p className="text-center text-white text-xs md:text-xs text-[8px]">
+        <p className="text-center text-yellow-400 text-xs md:text-xs text-[8px]">
           Mohamed
         </p>
       </section>
       <section className="absolute md:top-7 top-5 text-sm md:right-[65px] right-[30px] md:w-[90px] w-[95px] ">
-        <p className="text-center text-white text-xs md:text-xs text-[8px]">
+        <p className="text-center text-yellow-400 text-xs md:text-xs text-[8px]">
           Ahmed
         </p>
       </section>
+
+      <section className="absolute md:right-[28px] right-5 md:top-[150px] top-[110px] md:w-[205px] w-[155px]">
+        <div className="flex flex-col gap-2">
+          <Tab />
+          <Tab />
+          <Tab />
+          <Tab />
+        </div>
+      </section>
+
       <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:left-7 left-5 bg-transparent h-16 md:h-[80px] p-1 rounded-sm">
-        <p className="text-xs md:text-sm text-gray-300">Will not be traded</p>
+        <p className="text-xs text-gray-300 p-1">Will not be traded</p>
       </div>
       <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:right-6 right-4 bg-transparent h-16 md:h-[80px] p-1 rounded-sm">
-        <p className="text-xs md:text-sm text-gray-300">Will not be traded</p>
+        <p className="text-xs text-gray-300 p-1">Will not be traded</p>
       </div>
       <section className="absolute md:bottom-[23px] bottom-4 md:right-[17px] right-[10px] z-10">
         <Button
