@@ -15,41 +15,41 @@ function NewPanel() {
       <div className="absolute md:top-[22px] top-[15px] md:right-[15px] right-2">
         <Close />
       </div>
-
-      <section className="absolute md:top-[100px] top-[75px] md:left-7 left-4 md:w-[215px] w-[170px] md:min-h-[30px] bg-gradient-to-b from-black to-gray-900 -z-10">
-        <p>`</p>
-      </section>
-
-      <section className="absolute md:top-[100px] top-[75px] md:right-6 right-2 bg-gray-100 md:w-[215px] w-[170px]  md:min-h-[25px] bg-[url('/tex.png')] -z-10">
-        <p>X</p>
-      </section>
-
-      <section className="absolute md:top-7 top-5 text-sm md:left-[95px] left-[70px] w-[120px] md:w-[160px] ">
-        <p className="text-center text-white text-xs md:text-xs text-[8px]">
-          Mohamed
-        </p>
-      </section>
-
-      <section className="absolute md:top-7 top-5 text-sm md:right-[65px] right-[30px] md:w-[90px] w-[95px] ">
-        <p className="text-center text-white text-xs md:text-xs text-[8px]">
-          Ahmed
-        </p>
-      </section>
-
       <section className="absolute top-1 left-[5px] md:top-3 md:left-3 -z-10">
         <Avatar
           width={`${isMobile ? "70px" : "80px"}`}
           height={`${isMobile ? "70px" : "80px"}`}
         />
       </section>
-
       <section className="absolute top-1 right-[125px] md:top-2 md:right-[170px] -z-10">
         <Avatar
           width={`${isMobile ? "70px" : "80px"}`}
           height={`${isMobile ? "70px" : "80px"}`}
         />
       </section>
-
+      <section className="absolute md:top-[100px] top-[75px] md:left-7 left-4 md:w-[215px] w-[170px] md:min-h-[30px] bg-gradient-to-b from-black to-gray-900 -z-10">
+        <p>`</p>
+      </section>
+      1
+      <section className="absolute md:top-[100px] top-[75px] md:right-6 right-2 bg-gray-100 md:w-[215px] w-[170px]  md:min-h-[25px] bg-[url('/tex.png')] -z-10">
+        <p>`</p>
+      </section>
+      <section className="absolute md:top-7 top-5 text-sm md:left-[95px] left-[70px] w-[120px] md:w-[160px] ">
+        <p className="text-center text-white text-xs md:text-xs text-[8px]">
+          Mohamed
+        </p>
+      </section>
+      <section className="absolute md:top-7 top-5 text-sm md:right-[65px] right-[30px] md:w-[90px] w-[95px] ">
+        <p className="text-center text-white text-xs md:text-xs text-[8px]">
+          Ahmed
+        </p>
+      </section>
+      <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:left-7 left-5 bg-red-500 h-16 md:h-[80px] p-1 rounded-sm">
+        <p className="text-xs md:text-sm text-gray-300">Will not be traded</p>
+      </div>
+      <div className="absolute bottom-10 md:bottom-14 w-[160px] md:w-[215px] md:right-7 right-4 bg-red-500 h-16 md:h-[80px] p-1 rounded-sm">
+        <p className="text-xs md:text-sm text-gray-300">Will not be traded</p>
+      </div>
       <section className="absolute md:bottom-[23px] bottom-4 md:right-[17px] right-[10px] z-10">
         <Button
           title="Trade"
@@ -57,7 +57,6 @@ function NewPanel() {
           height={`${isMobile ? "20px" : "23px"}`}
         />
       </section>
-
       <section className="absolute md:bottom-[23px] bottom-4 md:right-[129px] right-[95px] z-10">
         <Button
           title="Cancel"
