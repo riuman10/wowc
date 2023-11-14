@@ -49,7 +49,7 @@ function NewPanel() {
       {/* Right Tabs */}
       <section className="absolute md:right-[28px] right-5 md:top-[150px] top-[110px] md:w-[205px] w-[155px]">
         <div className="flex flex-col gap-2">
-          <Tab title = "Cinnamon Rolls"/>
+          <Tab title = "Conjured Cinnamon Rolls"/>
           <Tab />
           <Tab />
           <Tab />
