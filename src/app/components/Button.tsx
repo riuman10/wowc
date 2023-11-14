@@ -11,7 +11,7 @@ function Button({
   return (
     <div className={`md:pt-[2px] pt-[1px] p-0 cursor-pointer flex items-center justify-center rounded-[4px] border-2  transition-all duration-250 ease-out`}
     style = {{
-     backgroundImage : isHovering ? 'radial-gradient(circle, #e52b2b, #570202)' : 'radial-gradient(circle, #570202, #570202)',
+     backgroundImage : isHovering ? 'radial-gradient(circle, #e52b2b, #660202)' : 'radial-gradient(circle, #660202, #660202)',
      borderTop : '2px ridge #ffb000',
      borderLeft : '2px groove #ffb000',
      borderRight : '2px ridge #ffb000',
